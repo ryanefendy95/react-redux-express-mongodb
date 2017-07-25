@@ -81,21 +81,10 @@ render(<Provider store={store}>
         </Provider>
     , document.getElementById('app'));
 
-// STEP 2 create and dispatch actions
-store.dispatch(postBooks(
-    [{
-        id: 1,
-        title:'this is the book title',
-        description: 'this is the book',
-        price: 33.33
-    },
-    {
-        id: 2,
-        title:'this is the second book title',
-        description: 'this is the second book',
-        price: 50
-    }]
-));
+// // STEP 2 create and dispatch actions
+// store.dispatch(postBooks(
+//
+// ));
 /*
 // DISPATCH an other book
 store.dispatch({

@@ -1,8 +1,16 @@
-// POST A BOOK
-export function postBooks(book) {
+// // POST A BOOK
+// export function postBooks(book) {
+//     return {
+//         type: "POST_BOOK",
+//         payload: book
+//     }
+// }
+
+// GET BOOKS
+export function getBooks(books) {
     return {
-        type: "POST_BOOK",
-        payload: book
+        type: "GET_BOOK",
+        payload: books
     }
 }
 

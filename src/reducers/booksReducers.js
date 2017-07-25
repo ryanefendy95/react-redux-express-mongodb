@@ -1,8 +1,11 @@
 // STEP 3 define reducers
 export function booksReducers (state={books:[]}, action) {
     switch (action.type) {
-        case "POST_BOOK":
-            return {books: [...state.books, ...action.payload]};
+        // case "POST_BOOK":
+        //     return {books: [...state.books, ...action.payload]};
+        case "GET_BOOK":
+            debugger;
+            return {...state, books: [...action.payload]};
         case "DELETE_BOOK":
             // Create a copy of the current array of books
             const currentBookToDelete = [...state.books];
